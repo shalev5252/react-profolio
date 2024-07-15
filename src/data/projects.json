@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Profolio site",
+    "imageSrc": "projects/project.png",
+    "imageSrcUrl": false,
+    "description": "A Profolio site projet intended for introducing me. the site has easy to use interface and its content is adjustable",
+    "skills": ["React", "CSS", "TypeScript"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Syntesis project",
+    "imageSrc": "projects/project.png",
+    "imageSrcUrl": false,
+    "description": "Syntesis code filling project.",
+    "skills": ["python", "Z3 solver" , "tkinter GUI library"],
+    "demo": "none",
+    "source": "https://github.com/shalev5252/syntesisProject"
+  }
+]

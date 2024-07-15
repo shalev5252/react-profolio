@@ -1,0 +1,21 @@
+[
+    {
+      "role": "Software engeener student",
+      "organisation": "Technion institute of technology",
+      "startDate": "Oct, 2018",
+      "endDate": "Jan, 2024",
+      "experiences": ["Student"],
+      "imageSrc": "history/technion.png",
+      "imageSrcUrl": false
+    },
+    {
+      "role": "War room commander",
+      "organisation": "IDF",
+      "startDate": "Feb, 2016",
+      "endDate": "Oct, 2018",
+      "experiences": ["led a small team of 10 soldiers"],
+      "imageSrc": "history/idf.png",
+      "imageSrcUrl": false
+    }
+  ]
+  

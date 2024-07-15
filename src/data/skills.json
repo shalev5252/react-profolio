@@ -1,0 +1,52 @@
+[
+    {
+      "title": "HTML",
+      "imageSrc": "skills/html.png",
+      "imageSrcUrl": false
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "skills/css.png",
+      "imageSrcUrl": false
+    },
+    {
+      "title": "C",
+      "imageSrc": "skills/c.png",
+      "imageSrcUrl": false
+    },
+    {
+      "title": "React",
+      "imageSrc": "skills/react.png",
+      "imageSrcUrl": false
+
+    },
+    {
+      "title": "CPP",
+      "imageSrc": "skills/cpp.png",
+      "imageSrcUrl": false
+
+    },
+    {
+      "title": "Python",
+      "imageSrc": "skills/python.png",
+      "imageSrcUrl": false
+
+    },
+    {
+      "title": "Java",
+      "imageSrc": "skills/java.png",
+      "imageSrcUrl": false
+
+    },
+    {
+      "title": "Figma",
+      "imageSrc": "skills/figma.png",
+      "imageSrcUrl": false
+    },
+    {
+      "title": "Flutter",
+      "imageSrc": "skills/flutter.png",
+      "imageSrcUrl": false
+    }
+  ]
+  

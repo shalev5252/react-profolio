@@ -1,0 +1,30 @@
+[
+    {
+      "role": "Leadership student",
+      "organisation": "Isef",
+      "startDate": "Oct, 2018",
+      "endDate": "Jun, 2023",
+      "experiences": ["Leadership program", "Tutor for high school student"],
+      "imageSrc": "history/isef.png",
+      "imageSrcUrl": false
+    },
+    {
+      "role": "Tutor in Kaat",
+      "organisation": "Technion insitute of technology",
+      "startDate": "OCT, 2021",
+      "endDate": "Jun, 2023",
+      "experiences": ["Math tutor for groups of middle school students"],
+      "imageSrc": "history/kaat.png",
+      "imageSrcUrl": false
+    },
+    {
+        "role": "Student",
+        "organisation": "Unistream",
+        "startDate": "OCT, 2012",
+        "endDate": "Jun, 2015",
+        "experiences": ["created a game app for children with disabilities"],
+        "imageSrc": "history/unistream.png",
+        "imageSrcUrl": false
+      }
+  ]
+  

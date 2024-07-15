@@ -1,0 +1,17 @@
+/* ScrollingImage.module.css */
+.imageContainer {
+    position: fixed;
+    left: 10px; /* Adjust as needed to position the image in the left corner */
+    bottom: 10px; /* Adjust as needed to position the image in the bottom corner */
+  }
+  
+  .image {
+    width: 80px; /* Adjust the size of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  @media screen and (max-width: 830px) {
+  .imageContainer{
+    display: none;
+  }
+  }

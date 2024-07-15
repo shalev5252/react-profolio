@@ -1,0 +1,71 @@
+{
+    "firstName": "Shalev",
+    "lastName": "Shasha",
+    "description": "Dedicated software engineer and leader with a B.Sc in Software Engineering.\n\nFueled by a passion for innovation, I leverage my skills, diverse experiences, and commitment to education to make a lasting impact on the world of technology.\n\nMy mission is to push boundaries, inspire collaboration, and drive positive change through continuous learning and creative problem-solving.",
+ 
+    "heroImage": "hero/myImage.png", 
+    "heroImageUrl": false, 
+
+    "aboutImage": "about/aboutImage.png", 
+    "aboutImageUrl": false,
+
+    "aboutSkills" :[
+        {
+          "title": "Frontent developer",
+          "description":"something about me and my job",
+          "skillImage": "about/cursorIcon.png",
+          "skillImageUrl": false,
+          "skillImageAlt": "Cursor icon"
+        },
+        {
+          "title": "Backend developer",
+          "description":"something about me and my job",
+          "skillImage": "about/serverIcon.png",
+          "skillImageUrl": false,
+          "skillImageAlt": "Server icon"
+        },
+        {
+          "title": "Ui designer developer",
+          "description":"something about me and my job",
+          "skillImage": "about/uiIcon.png",
+          "skillImageUrl": false,
+          "skillImageAlt": "Ui icon"
+        }
+    ],
+    "email": "shalevshasha@gmail.com",
+    "contact" :[
+        {
+            "contactMethodIcon": "contact/emailIcon.png",
+            "contactMethodIconUrl": false,
+            "contactMethodLink": "mailto:shalevshasha@gmail.com",
+            "contactMethodAlt": "Email icon",
+            "contactMethodText": "shalevshasha@gmail.com"
+        },
+
+        {
+            "contactMethodIcon": "contact/linkedinIcon.png",
+            "contactMethodIconUrl": false,
+            "contactMethodLink": "https://www.linkedin.com/myname",
+            "contactMethodAlt": "LinkedIn icon",
+            "contactMethodText": "linkedin.com/myname"
+        },
+
+        {
+            "contactMethodIcon": "contact/githubIcon.png",
+            "contactMethodIconUrl": false,
+            "contactMethodLink": "https://www.github.com/shalev5252",
+            "contactMethodAlt": "Github icon",
+            "contactMethodText": "github.com/shalev5252"
+        },
+
+        {
+          "contactMethodIcon": "contact/phoneIcon.png",
+          "contactMethodIconUrl": false,
+          "contactMethodLink": "none",
+          "contactMethodAlt": "+972-549712344",
+          "contactMethodText": "+972-549712344"
+      }
+    ],
+    "skills" : ["Teamwork","Time Management","Leadership","Effective Communication","Critical Thinking"],
+    "languages" : ["English (Fluent)","Hebrew (Fluent)","Spanish (Intermediate)","Arabic (beginner)"]
+  }
