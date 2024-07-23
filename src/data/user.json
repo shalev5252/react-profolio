@@ -3,7 +3,7 @@
     "lastName": "Shasha",
     "description": "Dedicated software engineer and leader with a B.Sc in Software Engineering.\n\nFueled by a passion for innovation, I leverage my skills, diverse experiences, and commitment to education to make a lasting impact on the world of technology.\n\nMy mission is to push boundaries, inspire collaboration, and drive positive change through continuous learning and creative problem-solving.",
  
-    "heroImage": "hero/myImage.png", 
+    "heroImage": "hero/heroImage.png", 
     "heroImageUrl": false, 
 
     "aboutImage": "about/aboutImage.png", 
@@ -45,9 +45,9 @@
         {
             "contactMethodIcon": "contact/linkedinIcon.png",
             "contactMethodIconUrl": false,
-            "contactMethodLink": "https://www.linkedin.com/myname",
+            "contactMethodLink": "https://www.linkedin.com/in/shalev-shasha-0734931aa/",
             "contactMethodAlt": "LinkedIn icon",
-            "contactMethodText": "linkedin.com/myname"
+            "contactMethodText": "linkedin.com/shalev-shasha"
         },
 
         {
