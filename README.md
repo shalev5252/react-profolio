@@ -49,3 +49,7 @@ the folder src/data contains 5 different Json files that are used to costumize t
 
 A user can change the order of the pages shown and can remove them by changing the "App.tsx" file
 and can change Colors by changing the values in the file "vars.css"
+
+the code used the concept and info from the following project code:
+
+- https://github.com/CodeCompleteYT/react-portfolio
