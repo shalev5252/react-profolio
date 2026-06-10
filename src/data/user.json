@@ -1,80 +1,84 @@
 {
-    "firstName": "Shalev",
-    "lastName": "Shasha",
-    "taglines": ["Backend Developer", "Full-Stack Engineer", "Problem Solver", "Tech Leader"],
-    "description": "Software Engineer with a B.Sc. from the Technion. I build robust backends, full-stack applications, and AI-powered tools. Passionate about clean architecture, scalable systems, and delivering real-world impact through code.",
-    "openToWork": true,
-
-    "heroImage": "hero/heroImage.png", 
-    "heroImageUrl": false, 
-    "profilePhoto": "photo/profile.jpg",
-
-    "aboutImage": "about/aboutImage.png", 
-    "aboutImageUrl": false,
-
-    "aboutSkills" :[
-        {
-          "title": "Backend Development",
-          "description": "Building scalable APIs, microservices, and server-side systems with Python, FastAPI, and Node.js",
-          "skillImage": "about/serverIcon.png",
-          "skillImageUrl": false,
-          "skillImageAlt": "Server icon"
-        },
-        {
-          "title": "Full-Stack Development",
-          "description": "End-to-end application development with React, TypeScript, Flutter, and modern frameworks",
-          "skillImage": "about/cursorIcon.png",
-          "skillImageUrl": false,
-          "skillImageAlt": "Cursor icon"
-        },
-        {
-          "title": "AI & Intelligent Systems",
-          "description": "Integrating AI models and natural language processing into production applications",
-          "skillImage": "about/uiIcon.png",
-          "skillImageUrl": false,
-          "skillImageAlt": "AI icon"
-        }
-    ],
-    "email": "shalevshasha@gmail.com",
-    "contact" :[
-        {
-            "contactMethodIcon": "contact/emailIcon.png",
-            "contactMethodIconUrl": false,
-            "contactMethodLink": "mailto:shalevshasha@gmail.com",
-            "contactMethodAlt": "Email icon",
-            "contactMethodText": "shalevshasha@gmail.com"
-        },
-
-        {
-            "contactMethodIcon": "contact/linkedinIcon.png",
-            "contactMethodIconUrl": false,
-            "contactMethodLink": "https://www.linkedin.com/in/shalev-shasha-0734931aa/",
-            "contactMethodAlt": "LinkedIn icon",
-            "contactMethodText": "linkedin.com/shalev-shasha"
-        },
-
-        {
-            "contactMethodIcon": "contact/githubIcon.png",
-            "contactMethodIconUrl": false,
-            "contactMethodLink": "https://www.github.com/shalev5252",
-            "contactMethodAlt": "Github icon",
-            "contactMethodText": "github.com/shalev5252"
-        },
-
-        {
-          "contactMethodIcon": "contact/phoneIcon.png",
-          "contactMethodIconUrl": false,
-          "contactMethodLink": "none",
-          "contactMethodAlt": "+972-549712344",
-          "contactMethodText": "+972-549712344"
-      }
-    ],
-    "skills" : ["Teamwork","Time Management","Leadership","Effective Communication","Critical Thinking"],
-    "languages" : ["English (Fluent)","Hebrew (Fluent)","Spanish (Intermediate)","Arabic (Beginner)"],
-    "stats": {
-      "yearsExperience": "3+",
-      "projectsBuilt": "5+",
-      "technologies": "12+",
-      "languagesSpoken": "4"
+  "firstName": "Shalev",
+  "lastName": "Shasha",
+  "taglines": [
+    "Backend Developer",
+    "Full-Stack Engineer",
+    "Problem Solver",
+    "Tech Leader"
+  ],
+  "description": "Software Engineer with a B.Sc. from the Technion. I build robust backends, full-stack applications, and AI-powered tools. Passionate about clean architecture, scalable systems, and delivering real-world impact through code.",
+  "openToWork": true,
+  "heroImage": "hero/heroImage.png",
+  "heroImageUrl": false,
+  "profilePhoto": "photo/profile.jpg",
+  "aboutImage": "about/aboutImage.png",
+  "aboutImageUrl": false,
+  "aboutSkills": [
+    {
+      "title": "Backend Development",
+      "description": "Building scalable APIs, microservices, and server-side systems with Python, FastAPI, and Node.js",
+      "skillImage": "about/serverIcon.png",
+      "skillImageUrl": false,
+      "skillImageAlt": "Server icon"
+    },
+    {
+      "title": "Full-Stack Development",
+      "description": "End-to-end application development with React, TypeScript, Flutter, and modern frameworks",
+      "skillImage": "about/cursorIcon.png",
+      "skillImageUrl": false,
+      "skillImageAlt": "Cursor icon"
+    },
+    {
+      "title": "AI & Intelligent Systems",
+      "description": "Integrating AI models and natural language processing into production applications",
+      "skillImage": "about/uiIcon.png",
+      "skillImageUrl": false,
+      "skillImageAlt": "AI icon"
     }
-  }
+  ],
+  "email": "shalevshasha@gmail.com",
+  "contact": [
+    {
+      "contactMethodIcon": "contact/emailIcon.png",
+      "contactMethodIconUrl": false,
+      "contactMethodLink": "mailto:shalevshasha@gmail.com",
+      "contactMethodAlt": "Email icon",
+      "contactMethodText": "shalevshasha@gmail.com"
+    },
+    {
+      "contactMethodIcon": "contact/linkedinIcon.png",
+      "contactMethodIconUrl": false,
+      "contactMethodLink": "https://www.linkedin.com/in/shalev-shasha-0734931aa/",
+      "contactMethodAlt": "LinkedIn icon",
+      "contactMethodText": "linkedin.com/shalev-shasha"
+    },
+    {
+      "contactMethodIcon": "contact/githubIcon.png",
+      "contactMethodIconUrl": false,
+      "contactMethodLink": "https://www.github.com/shalev5252",
+      "contactMethodAlt": "Github icon",
+      "contactMethodText": "github.com/shalev5252"
+    },
+    {
+      "contactMethodIcon": "contact/phoneIcon.png",
+      "contactMethodIconUrl": false,
+      "contactMethodLink": "none",
+      "contactMethodAlt": "+972-549712344",
+      "contactMethodText": "+972-549712344"
+    }
+  ],
+  "skills": [
+    "Teamwork",
+    "Time Management",
+    "Leadership",
+    "Effective Communication",
+    "Critical Thinking"
+  ],
+  "languages": [
+    "English (Fluent)",
+    "Hebrew (Fluent)",
+    "Spanish (Intermediate)",
+    "Arabic (Beginner)"
+  ]
+}

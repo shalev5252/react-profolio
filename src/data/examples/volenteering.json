@@ -1,0 +1,14 @@
+[
+  {
+    "role": "Code Mentor",
+    "organisation": "Local Coding Bootcamp",
+    "startDate": "Sep, 2020",
+    "endDate": "Present",
+    "experiences": [
+      "Volunteer weekly to help underrepresented groups learn web development.",
+      "Conduct mock interviews and provide resume reviews."
+    ],
+    "imageSrc": "history/bootcamp.png",
+    "imageSrcUrl": false
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png",
+    "imageSrcUrl": false
+  },
+  {
+    "title": "TypeScript",
+    "imageSrc": "skills/typescript.png",
+    "imageSrcUrl": false
+  },
+  {
+    "title": "Node.js",
+    "imageSrc": "skills/node.png",
+    "imageSrcUrl": false
+  }
+]

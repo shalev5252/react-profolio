@@ -6,12 +6,12 @@ import useScrollReveal from "../../hooks/useScrollReveal";
 const About = () => {
   const sectionRef = useScrollReveal<HTMLElement>();
 
-  const stats = [
+  const stats = user.stats ? [
     { value: user.stats.yearsExperience, label: "Years Experience" },
     { value: user.stats.projectsBuilt, label: "Projects Built" },
     { value: user.stats.technologies, label: "Technologies" },
     { value: user.stats.languagesSpoken, label: "Languages" },
-  ];
+  ] : null;
 
   return (
     <section className={styles.container} id="about" ref={sectionRef}>
@@ -59,14 +59,16 @@ const About = () => {
         </div>
       </div>
 
-      <div className={`${styles.statsRow} reveal`}>
-        {stats.map((stat, i) => (
-          <div key={i} className={styles.statItem}>
-            <span className={styles.statValue}>{stat.value}</span>
-            <span className={styles.statLabel}>{stat.label}</span>
-          </div>
-        ))}
-      </div>
+      {stats && (
+        <div className={`${styles.statsRow} reveal`}>
+          {stats.map((stat, i) => (
+            <div key={i} className={styles.statItem}>
+              <span className={styles.statValue}>{stat.value}</span>
+              <span className={styles.statLabel}>{stat.label}</span>
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   );
 };

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "E-Commerce Dashboard",
+    "imageSrc": "projects/ecommerce.png",
+    "imageSrcUrl": false,
+    "description": "A comprehensive dashboard for managing online store inventory and sales analytics.",
+    "skills": ["React", "TypeScript", "Tailwind CSS", "Recharts"],
+    "demo": "https://example.com/demo",
+    "source": "https://github.com/alex-dev/ecommerce-dashboard",
+    "app": false,
+    "featured": true
+  },
+  {
+    "title": "Weather App",
+    "imageSrc": "projects/weather.png",
+    "imageSrcUrl": false,
+    "description": "A simple and beautiful weather application using the OpenWeather API.",
+    "skills": ["JavaScript", "HTML", "CSS"],
+    "demo": "https://example.com/weather",
+    "source": "https://github.com/alex-dev/weather-app",
+    "app": true
+  }
+]

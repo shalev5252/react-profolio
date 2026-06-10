@@ -1,0 +1,71 @@
+{
+  "firstName": "Alex",
+  "lastName": "Developer",
+  "taglines": [
+    "Frontend Wizard",
+    "UI/UX Enthusiast",
+    "Creative Coder"
+  ],
+  "description": "I'm a passionate developer who loves building beautiful, interactive web experiences. With a strong background in React and modern CSS, I focus on performance and accessibility.",
+  "openToWork": true,
+  "heroImage": "hero/heroImage.png",
+  "heroImageUrl": false,
+  "profilePhoto": "photo/profile.jpg",
+  "aboutImage": "about/aboutImage.png",
+  "aboutImageUrl": false,
+  "aboutSkills": [
+    {
+      "title": "Frontend Development",
+      "description": "Building responsive and accessible UIs using React, Vue, and Tailwind CSS.",
+      "skillImage": "about/cursorIcon.png",
+      "skillImageUrl": false,
+      "skillImageAlt": "Cursor icon"
+    },
+    {
+      "title": "Backend Development",
+      "description": "Creating robust APIs using Node.js and Express.",
+      "skillImage": "about/serverIcon.png",
+      "skillImageUrl": false,
+      "skillImageAlt": "Server icon"
+    }
+  ],
+  "email": "alex@example.com",
+  "contact": [
+    {
+      "contactMethodIcon": "contact/emailIcon.png",
+      "contactMethodIconUrl": false,
+      "contactMethodLink": "mailto:alex@example.com",
+      "contactMethodAlt": "Email icon",
+      "contactMethodText": "alex@example.com"
+    },
+    {
+      "contactMethodIcon": "contact/linkedinIcon.png",
+      "contactMethodIconUrl": false,
+      "contactMethodLink": "https://linkedin.com/in/alex-developer",
+      "contactMethodAlt": "LinkedIn icon",
+      "contactMethodText": "linkedin.com/alex-developer"
+    },
+    {
+      "contactMethodIcon": "contact/githubIcon.png",
+      "contactMethodIconUrl": false,
+      "contactMethodLink": "https://github.com/alex-dev",
+      "contactMethodAlt": "Github icon",
+      "contactMethodText": "github.com/alex-dev"
+    }
+  ],
+  "skills": [
+    "Agile Methodology",
+    "Public Speaking",
+    "Mentoring"
+  ],
+  "languages": [
+    "English (Native)",
+    "French (Conversational)"
+  ],
+  "stats": {
+    "yearsExperience": "5+",
+    "projectsBuilt": "20+",
+    "technologies": "15+",
+    "languagesSpoken": "2"
+  }
+}

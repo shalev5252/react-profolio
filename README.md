@@ -51,9 +51,12 @@ src/data/
 ├── volenteering.json    # Volunteering entries
 ├── projects.json        # Project cards
 ├── skills.json          # Technical skill icons
-└── descriptions/        # Detailed project descriptions (markdown)
-    ├── calendaragent.txt
-    └── killerPool.txt
+├── descriptions/        # Detailed project descriptions (markdown)
+│   ├── calendaragent.txt
+│   └── killerPool.txt
+└── examples/            # Example JSON templates for new users
+    ├── user.json
+    └── ...
 
 public/
 ├── resume.pdf           # Your CV file (gitignored)
