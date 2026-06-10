@@ -1,88 +1,180 @@
 @import "../../vars.css";
 
 .container {
-position: relative;
-background-color: rgba(12 ,12,12,0.6);
-border-radius: 15px;
-padding: 73px;
-margin-top: 129px;
-z-index: 1;
-margin-left: 10%;
-margin-right: 10%;
+  position: relative;
+  padding: var(--space-section) var(--side-padding);
+  z-index: 1;
 }
 
-.title{
-    color: var(--color-text);
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
+.content {
+  display: flex;
+  gap: var(--space-2xl);
+  align-items: flex-start;
+  margin-top: var(--space-xl);
 }
 
-.content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+/* ─── Image ─── */
+.imageCol {
+  flex-shrink: 0;
 }
 
-.aboutImage{
-    width: 35%;
+.imageFrame {
+  width: 300px;
+  height: 360px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 2px solid var(--glass-border);
+  background: var(--gradient-card);
+  box-shadow: var(--glass-shadow);
+  transition: transform var(--transition-base);
 }
 
-.aboutItems{
-    color: var(--color-text);
-    display: flex;
+.imageFrame:hover {
+  transform: scale(1.02);
+}
+
+.aboutImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ─── Info Column ─── */
+.infoCol {
+  flex: 1;
+}
+
+.bio {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+/* ─── Highlight Cards ─── */
+.highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.highlightCard {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  transition: all var(--transition-base);
+}
+
+.highlightCard:hover {
+  border-color: var(--color-primary);
+  background: rgba(99, 102, 241, 0.06);
+  transform: translateX(6px);
+}
+
+.highlightIcon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: var(--radius-sm);
+  background: rgba(99, 102, 241, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.highlightIcon img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}
+
+.highlightTitle {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.highlightDesc {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* ─── Stats Row ─── */
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+  padding: var(--space-xl) var(--space-lg);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.statValue {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.statLabel {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* ─── Responsive ─── */
+@media screen and (max-width: 900px) {
+  .content {
     flex-direction: column;
-    gap: 50px;
-}
-
-.aboutItem{
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    border-radius: 20px;
-    list-style: none;
-    padding: 25px;
-    background-image: linear-gradient(90deg, rgba(165,215,232,0.42) 0% , rgba(255,255,255,0) 100%);
-    background-size: 0 100%;
-    background-repeat: no-repeat;
-    transition: 0.4s;
+  }
+
+  .imageFrame {
+    width: 240px;
+    height: 290px;
+  }
+
+  .statsRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.aboutItem:hover{
-    background-size: 100% 100%;
-}
+@media screen and (max-width: 480px) {
+  .statsRow {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
 
-.aboutItem h3{
-    font-size: 25px;
-    font-weight: 600;
-}
+  .statValue {
+    font-size: 28px;
+  }
 
-.aboutItem p{
-    font-size: 25px;
-}
-
-@media screen and (max-width: 830px){
-    .container{
-        background-color: transparent;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .content{
-        flex-direction: column;
-    }
-
-    .aboutImage{
-        display: none;
-    }
-
-    .aboutItems{
-        margin-top: 29px;
-    }
-
-    .aboutItem{
-        padding-left: 0; 
-        padding-right: 0;
-    }
+  .imageCol {
+    display: none;
+  }
 }

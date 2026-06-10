@@ -1,78 +1,212 @@
 @import "../../vars.css";
 
 .navbar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 61px;
-    z-index: 2;
-    margin: 0 10%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px var(--side-padding);
+  z-index: 100;
+  transition: all var(--transition-base);
 }
 
-.title {
-    font-size: 30px;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--color-text);
+.navbar.scrolled {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  padding: 14px var(--side-padding);
 }
-.menuBtn {
-    display: none;
-  }
-  
-.menu {
-    display: flex;
+
+/* ─── Logo ─── */
+.logo {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  z-index: 101;
+}
+
+.logoDot {
+  color: var(--color-primary);
+  font-size: 32px;
+  line-height: 1;
+}
+
+/* ─── Menu Container ─── */
+.menuContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .menuItems {
-display: flex;
-gap: 47px;
-list-style: none;
+  display: flex;
+  gap: 32px;
+  list-style: none;
 }
 
 .menuItems a {
-    font-size: 25px;
-    color: var(--color-text);
-    text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color var(--transition-base);
 }
 
-@media screen and (max-width: 830px){
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu{
-        position: absolute;
-        right:0;
-        margin-right: 10%;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 11px;
-        z-index: 3;
-    }
-
-    .menuBtn{
-        display: block;
-        cursor: pointer;
-    }
-
-    .menuItems{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap:13px;
-        border-radius: 10px;
-        background: rgb(25, 55 , 109);
-        background: linear-gradient(0deg, rgba(25, 55, 109, 0.2) 0%, rgba(25, 55, 109, 1) 100%);
-        padding: 24px 33px;
-        box-shadow:  0 0 4px 0 rgba(0, 0, 0, 0.25);
-    }
-
-    .menuOpen{
-        display: flex;
-        z-index: 1;
-    }
+.menuItems a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+  transition: width var(--transition-base);
 }
 
-    
+.menuItems a:hover,
+.menuItems a.active {
+  color: var(--color-text);
+}
+
+.menuItems a:hover::after,
+.menuItems a.active::after {
+  width: 100%;
+}
+
+/* ─── Actions (toggle + CV) ─── */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ─── Theme Toggle ─── */
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.themeToggle:hover {
+  color: var(--color-text);
+  border-color: var(--color-primary);
+  background: rgba(99, 102, 241, 0.1);
+  transform: rotate(20deg);
+}
+
+/* ─── CV Button ─── */
+.cvButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: var(--radius-full);
+  padding: 10px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.cvButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
+/* ─── Hamburger ─── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 101;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: all var(--transition-base);
+  transform-origin: center;
+}
+
+.hamburger.hamburgerOpen span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.hamburgerOpen span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger.hamburgerOpen span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ─── Mobile ─── */
+@media screen and (max-width: 830px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .menuContainer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: var(--color-surface);
+    backdrop-filter: var(--glass-blur);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: right var(--transition-slow);
+    border-left: 1px solid var(--glass-border);
+    z-index: 100;
+  }
+
+  .menuContainer.menuOpen {
+    right: 0;
+  }
+
+  .menuItems {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .menuItems a {
+    font-size: 18px;
+  }
+}

@@ -1,36 +1,38 @@
 {
     "firstName": "Shalev",
     "lastName": "Shasha",
-    "description": "Dedicated software engineer and leader with a B.Sc in Software Engineering.\n\nFueled by a passion for innovation, I leverage my skills, diverse experiences, and commitment to education to make a lasting impact on the world of technology.\n\nMy mission is to push boundaries, inspire collaboration, and drive positive change through continuous learning and creative problem-solving.",
- 
+    "taglines": ["Backend Developer", "Full-Stack Engineer", "Problem Solver", "Tech Leader"],
+    "description": "Software Engineer with a B.Sc. from the Technion. I build robust backends, full-stack applications, and AI-powered tools. Passionate about clean architecture, scalable systems, and delivering real-world impact through code.",
+    "openToWork": true,
+
     "heroImage": "hero/heroImage.png", 
     "heroImageUrl": false, 
+    "profilePhoto": "photo/profile.jpg",
 
-    
     "aboutImage": "about/aboutImage.png", 
     "aboutImageUrl": false,
 
     "aboutSkills" :[
         {
-          "title": "Frontent developer",
-          "description":"something about me and my job",
-          "skillImage": "about/cursorIcon.png",
-          "skillImageUrl": false,
-          "skillImageAlt": "Cursor icon"
-        },
-        {
-          "title": "Backend developer",
-          "description":"something about me and my job",
+          "title": "Backend Development",
+          "description": "Building scalable APIs, microservices, and server-side systems with Python, FastAPI, and Node.js",
           "skillImage": "about/serverIcon.png",
           "skillImageUrl": false,
           "skillImageAlt": "Server icon"
         },
         {
-          "title": "Ui designer developer",
-          "description":"something about me and my job",
+          "title": "Full-Stack Development",
+          "description": "End-to-end application development with React, TypeScript, Flutter, and modern frameworks",
+          "skillImage": "about/cursorIcon.png",
+          "skillImageUrl": false,
+          "skillImageAlt": "Cursor icon"
+        },
+        {
+          "title": "AI & Intelligent Systems",
+          "description": "Integrating AI models and natural language processing into production applications",
           "skillImage": "about/uiIcon.png",
           "skillImageUrl": false,
-          "skillImageAlt": "Ui icon"
+          "skillImageAlt": "AI icon"
         }
     ],
     "email": "shalevshasha@gmail.com",
@@ -68,5 +70,11 @@
       }
     ],
     "skills" : ["Teamwork","Time Management","Leadership","Effective Communication","Critical Thinking"],
-    "languages" : ["English (Fluent)","Hebrew (Fluent)","Spanish (Intermediate)","Arabic (beginner)"]
+    "languages" : ["English (Fluent)","Hebrew (Fluent)","Spanish (Intermediate)","Arabic (Beginner)"],
+    "stats": {
+      "yearsExperience": "3+",
+      "projectsBuilt": "5+",
+      "technologies": "12+",
+      "languagesSpoken": "4"
+    }
   }

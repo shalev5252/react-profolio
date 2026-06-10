@@ -1,6 +1,7 @@
 export const getImageUrl = (path: string) => {
-  return new URL(`/assets/${path}`, import.meta.url).href;
+  // Make sure no accidental slashes at start
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `/assets/${cleanPath}`;
 };
 
-export default getImageUrl
-
+export default getImageUrl;

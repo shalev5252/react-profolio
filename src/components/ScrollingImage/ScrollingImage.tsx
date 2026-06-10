@@ -1,16 +1,9 @@
-import styles from "./ScrollingImage.module.css"; // Import CSS module for styling
-import getImageUrl from "../../utils";
+// ScrollingImage component - removed
+// The floating avatar in the bottom-left corner was removed as part of the professional redesign.
+// The hero section avatar serves this purpose better.
 
 const ScrollingImage = () => {
-  return (
-    <div className={styles.imageContainer}>
-      <img
-        src={getImageUrl("hero/heroImage.png")}
-        alt="Scrolling Image"
-        className={styles.image}
-      />
-    </div>
-  );
+  return null;
 };
 
 export default ScrollingImage;

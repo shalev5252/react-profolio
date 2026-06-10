@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local Netlify folder
+.netlify
+
+# Private assets (photo, resume) — keep directory but not files
+public/assets/photo/*
+!public/assets/photo/.gitkeep
+public/resume.pdf

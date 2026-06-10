@@ -1,39 +1,71 @@
 import styles from "./About.module.css";
 import getImageUrl from "../../utils";
 import user from "../../data/user.json";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 const About = () => {
+  const sectionRef = useScrollReveal<HTMLElement>();
+
+  const stats = [
+    { value: user.stats.yearsExperience, label: "Years Experience" },
+    { value: user.stats.projectsBuilt, label: "Projects Built" },
+    { value: user.stats.technologies, label: "Technologies" },
+    { value: user.stats.languagesSpoken, label: "Languages" },
+  ];
+
   return (
-    <section className={styles.container} id="about">
-      <h2 className={styles.title}>About</h2>
+    <section className={styles.container} id="about" ref={sectionRef}>
+      <div className="reveal">
+        <span className="sectionLabel">About Me</span>
+        <h2 className="sectionTitle">Get to Know Me</h2>
+      </div>
+
       <div className={styles.content}>
-        <img
-          src={
-            user.aboutImageUrl ? user.aboutImage : getImageUrl(user.aboutImage)
-          }
-          alt="me sitting with a laptop"
-          className={styles.aboutImage}
-        />
-        <ul className={styles.aboutItems}>
-          {user.aboutSkills.map((aboutItem, id) => {
-            return (
-              <li key={id} className={styles.aboutItem}>
-                <img
-                  src={
-                    aboutItem.skillImageUrl
-                      ? aboutItem.skillImage
-                      : getImageUrl(aboutItem.skillImage)
-                  }
-                  alt={aboutItem.skillImageAlt}
-                />
-                <div className={styles.aboutItemText}>
-                  <h3>{aboutItem.title}</h3>
-                  <p>{aboutItem.description}</p>
+        <div className={`${styles.imageCol} reveal-left`}>
+          <div className={styles.imageFrame}>
+            <img
+              src={
+                user.aboutImageUrl ? user.aboutImage : getImageUrl(user.aboutImage)
+              }
+              alt="Shalev Shasha"
+              className={styles.aboutImage}
+            />
+          </div>
+        </div>
+
+        <div className={`${styles.infoCol} reveal-right`}>
+          <p className={styles.bio}>{user.description}</p>
+
+          <ul className={styles.highlights}>
+            {user.aboutSkills.map((item, id) => (
+              <li key={id} className={styles.highlightCard}>
+                <div className={styles.highlightIcon}>
+                  <img
+                    src={
+                      item.skillImageUrl
+                        ? item.skillImage
+                        : getImageUrl(item.skillImage)
+                    }
+                    alt={item.skillImageAlt}
+                  />
+                </div>
+                <div>
+                  <h3 className={styles.highlightTitle}>{item.title}</h3>
+                  <p className={styles.highlightDesc}>{item.description}</p>
                 </div>
               </li>
-            );
-          })}
-        </ul>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className={`${styles.statsRow} reveal`}>
+        {stats.map((stat, i) => (
+          <div key={i} className={styles.statItem}>
+            <span className={styles.statValue}>{stat.value}</span>
+            <span className={styles.statLabel}>{stat.label}</span>
+          </div>
+        ))}
       </div>
     </section>
   );

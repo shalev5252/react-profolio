@@ -1,0 +1,8 @@
+Tech Stack: Python, FastAPI, OpenAI API (MLP model), Google Calendar API, Flutter (Dart), Render Cloud Hosting
+
+This project is an AI-powered calendar assistant that allows users to interact with their Google Calendar using natural language commands — either through text or speech.
+The assistant can interpret user requests such as “Add a meeting with John tomorrow at 10 AM” or “How many classes do I have this week?”, and automatically apply changes or retrieve relevant information.
+
+The backend, built with Python and FastAPI, integrates the OpenAI MLP model for natural-language understanding and the Google Calendar API for event management. The backend is hosted on Render Cloud.
+
+The frontend is developed with Flutter (Dart), featuring speech-to-text capabilities and HTTP communication with the FastAPI server to send commands and display results in real time.

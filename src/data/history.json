@@ -1,21 +1,38 @@
 [
-    {
-      "role": "Software engeener student",
-      "organisation": "Technion institute of technology",
-      "startDate": "Oct, 2018",
-      "endDate": "Jan, 2024",
-      "experiences": ["Student"],
-      "imageSrc": "history/technion.png",
-      "imageSrcUrl": false
-    },
-    {
-      "role": "War room commander",
-      "organisation": "IDF",
-      "startDate": "Feb, 2016",
-      "endDate": "Oct, 2018",
-      "experiences": ["led a small team of 10 soldiers"],
-      "imageSrc": "history/idf.png",
-      "imageSrcUrl": false
-    }
-  ]
-  
+  {
+    "role": "Iron Swords War — Reserve Service",
+    "organisation": "IDF",
+    "startDate": "Oct, 2024",
+    "endDate": "Dec, 2025",
+    "experiences": [
+      "Served as a reservist during the Iron Swords operation",
+      "Demonstrated resilience and commitment under high-pressure conditions"
+    ],
+    "imageSrc": "history/idf.png",
+    "imageSrcUrl": false
+  },
+  {
+    "role": "Software Engineering Student (B.Sc.)",
+    "organisation": "Technion — Israel Institute of Technology",
+    "startDate": "Oct, 2018",
+    "endDate": "Jan, 2024",
+    "experiences": [
+      "Completed a B.Sc. in Software Engineering from a world-renowned institution",
+      "Coursework in algorithms, systems programming, databases, AI, and software design"
+    ],
+    "imageSrc": "history/technion.png",
+    "imageSrcUrl": false
+  },
+  {
+    "role": "War Room Commander",
+    "organisation": "IDF",
+    "startDate": "Feb, 2016",
+    "endDate": "Oct, 2018",
+    "experiences": [
+      "Led and managed a team of 10 soldiers in a high-stakes operational environment",
+      "Coordinated real-time intelligence and decision-making under pressure"
+    ],
+    "imageSrc": "history/idf.png",
+    "imageSrcUrl": false
+  }
+]

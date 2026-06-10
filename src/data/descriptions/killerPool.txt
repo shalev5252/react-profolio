@@ -1,0 +1,15 @@
+Tech Stack: Flutter (Dart)
+
+This project is a companion tool designed to set up and manage a game of Killer Pool, streamlining the process and ensuring smooth gameplay.
+
+The application handles player setup, life assignment, and turn management according to the official Killer Pool rules.
+
+Game Rules Overview
+
+* Each player is randomly assigned a secret pool ball that represents their “life.”
+
+* Players take turns attempting to pot any ball except their own.
+
+* If a player’s designated ball is potted, that player is eliminated from the game.
+
+* The game continues until only one player remains, who is declared the winner.

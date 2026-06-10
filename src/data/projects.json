@@ -1,20 +1,67 @@
 [
   {
-    "title": "Profolio site",
-    "imageSrc": "projects/project.png",
+    "title": "Calendar Agent",
+    "imageSrc": "projects/agent_logo.png",
     "imageSrcUrl": false,
-    "description": "A Profolio site projet intended for introducing me. the site has easy to use interface and its content is adjustable",
-    "skills": ["React", "CSS", "TypeScript"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "description": "AI-powered calendar assistant that interprets natural language commands to manage Google Calendar events via text or speech.",
+    "detailedDescription": "data/descriptions/calendaragent.txt",
+    "skills": ["Python", "FastAPI", "OpenAI API", "Flutter", "Google Calendar API"],
+    "demo": "none",
+    "source": "https://github.com/shalev5252/calendar_agent",
+    "app": true,
+    "featured": true,
+    "media":  [
+            "projects/calendar_agent_query.gif",
+            "projects/agent1.gif",
+            "projects/agent2.gif",
+            "projects/agent3.gif"
+          ]
   },
   {
-    "title": "Syntesis project",
-    "imageSrc": "projects/project.png",
+    "title": "Portfolio Site",
+    "imageSrc": "projects/untitled design (2).png",
     "imageSrcUrl": false,
-    "description": "Syntesis code filling project.",
-    "skills": ["python", "Z3 solver" , "tkinter GUI library"],
+    "description": "A modern, responsive portfolio site with data-driven content, project detail pages, and a media carousel.",
+    "skills": ["React", "TypeScript", "CSS"],
+    "demo": "https://shalevcv.netlify.app/",
+    "source": "https://www.github.com",
+    "app": true
+  },
+  {
+    "title": "Killer Pool",
+    "imageSrc": "projects/killerpool_logo.png",
+    "imageSrcUrl": false,
+    "description": "Companion app for setting up and managing Killer Pool games with automated player tracking, life assignment, and turn management.",
+    "detailedDescription": "data/descriptions/killerPool.txt",
+    "skills": ["Flutter", "Dart"],
     "demo": "none",
-    "source": "https://github.com/shalev5252/syntesisProject"
+    "source": "https://github.com/shalev5252/killer_pool",
+      "app": true,
+      "media":  [
+                  "projects/killerpool1.gif",
+                  "projects/killerpool2.gif",
+                  "projects/killerpool3.gif",
+                  "projects/killerpool4.gif"
+                ]
+  },
+  {
+    "title": "MPStorage",
+    "imageSrc": "projects/mpstorage_logo.png",
+    "imageSrcUrl": false,
+    "description": "Storage management application for tracking inventory across facilities with item borrowing and returning workflows.",
+    "skills": ["Flutter", "Firestore"],
+    "demo": "none",
+    "source": "https://github.com/shalev5252/mpstorage",
+    "app": true
+  },
+  {
+    "title": "Synthesis Project",
+    "imageSrc": "projects/no_logo.png",
+    "imageSrcUrl": false,
+    "description": "Code synthesis tool using formal methods and constraint solving to automatically generate valid code completions.",
+    "skills": ["Python", "Z3 Solver", "Tkinter"],
+    "demo": "none",
+    "source": "https://github.com/shalev5252/syntesisProject",
+    "app": false
   }
 ]
