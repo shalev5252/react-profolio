@@ -70,7 +70,7 @@
 
 .linkAnchor:hover {
   color: var(--color-text);
-  background: rgba(99, 102, 241, 0.06);
+  background: rgba(255, 255, 255, 0.03);
   border-color: var(--glass-border);
 }
 
@@ -87,9 +87,29 @@
   transition: all var(--transition-base);
 }
 
-.linkAnchor:hover .iconWrap {
-  background: var(--gradient-primary);
-  color: var(--color-text);
+/* Brand specific hover colors */
+.linkAnchor[data-type="email"]:hover .iconWrap {
+  background: #ea4335;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(234, 67, 53, 0.4);
+}
+
+.linkAnchor[data-type="linkedin"]:hover .iconWrap {
+  background: #0a66c2;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(10, 102, 194, 0.4);
+}
+
+.linkAnchor[data-type="github"]:hover .iconWrap {
+  background: #ffffff;
+  color: #111827;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.linkAnchor[data-type="phone"]:hover .iconWrap {
+  background: #34d399;
+  color: #111827;
+  box-shadow: 0 0 15px rgba(52, 211, 153, 0.4);
 }
 
 .linkText {

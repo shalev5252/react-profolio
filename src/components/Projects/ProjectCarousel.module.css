@@ -1,0 +1,390 @@
+@import "../../vars.css";
+
+/* ═══════════════════════════════════════
+   VIEW TOGGLE
+   ═══════════════════════════════════════ */
+.viewToggleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.toggleLabel {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.toggleBtnGroup {
+  display: flex;
+  gap: 6px;
+  background: rgba(17, 24, 39, 0.6);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-full);
+  padding: 4px;
+}
+
+.toggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  background: transparent;
+  color: var(--color-text-muted);
+}
+
+.toggleBtn.active {
+  background: var(--gradient-primary);
+  color: var(--color-text);
+  box-shadow: 0 2px 12px rgba(99, 102, 241, 0.3);
+}
+
+.toggleBtn:not(.active):hover {
+  color: var(--color-text-secondary);
+  background: rgba(99, 102, 241, 0.08);
+}
+
+/* ═══════════════════════════════════════
+   3D CAROUSEL SCENE
+   ═══════════════════════════════════════ */
+.carouselSection {
+  position: relative;
+  width: 100%;
+  margin-top: var(--space-xl);
+}
+
+.carouselScene {
+  width: 100%;
+  height: 560px;
+  perspective: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel3D {
+  width: 420px;
+  height: 500px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Each card face positioned in 3D space — JS sets transform via CSS var */
+.carouselItem {
+  position: absolute;
+  width: 400px;
+  height: 480px;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -240px;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.carouselCard {
+  width: 100%;
+  height: 100%;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--glass-shadow);
+  position: relative;
+}
+
+/* Active (front/center) card glows */
+.carouselItem.active .carouselCard {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.25), var(--glass-shadow);
+}
+
+.carouselImageWrap {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(6, 182, 212, 0.08) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.carouselImageWrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 120%, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+}
+
+.carouselImage {
+  width: 55%;
+  height: 55%;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.3));
+  transition: transform var(--transition-slow);
+}
+
+.carouselItem.active .carouselImage {
+  transform: scale(1.05);
+}
+
+.carouselBody {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+  overflow: hidden;
+}
+
+.carouselTitle {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.carouselDesc {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.carouselTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: auto;
+}
+
+.carouselTag {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-accent);
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  border-radius: var(--radius-full);
+  padding: 3px 10px;
+}
+
+.carouselLinks {
+  display: flex;
+  gap: 8px;
+  margin-top: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.carouselLinkBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  cursor: pointer;
+  border: none;
+}
+
+.carouselLinkBtn.primary {
+  background: var(--gradient-primary);
+  color: var(--color-text);
+}
+
+.carouselLinkBtn.secondary {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--color-text-secondary);
+}
+
+.carouselLinkBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.25);
+}
+
+/* Featured badge */
+.featuredBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  padding: 4px 12px;
+  z-index: 2;
+}
+
+/* ═══════════════════════════════════════
+   CAROUSEL NAVIGATION
+   ═══════════════════════════════════════ */
+.carouselNav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  z-index: 10;
+}
+
+.carouselNav:hover {
+  background: var(--gradient-primary);
+  border-color: transparent;
+  color: var(--color-text);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.35);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carouselNavLeft {
+  left: 0;
+}
+
+.carouselNavRight {
+  right: 0;
+}
+
+/* ═══════════════════════════════════════
+   DOTS INDICATOR
+   ═══════════════════════════════════════ */
+.carouselDots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: var(--space-xl);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-text-muted);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  padding: 0;
+}
+
+.dot.activeDot {
+  background: var(--gradient-primary);
+  width: 24px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+.dot:not(.activeDot):hover {
+  background: var(--color-text-secondary);
+  transform: scale(1.2);
+}
+
+/* ═══════════════════════════════════════
+   AUTO-PLAY INDICATOR
+   ═══════════════════════════════════════ */
+.autoPlayRing {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  pointer-events: none;
+}
+
+.autoPlayRing svg {
+  transform: rotate(-90deg);
+}
+
+.autoPlayRingTrack {
+  fill: none;
+  stroke: rgba(99, 102, 241, 0.15);
+  stroke-width: 2.5;
+}
+
+.autoPlayRingProgress {
+  fill: none;
+  stroke: url(#carouselGrad);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.1s linear;
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════ */
+@media screen and (max-width: 768px) {
+  .carouselScene {
+    height: 500px;
+    perspective: 900px;
+  }
+
+  .carousel3D {
+    width: 320px;
+    height: 420px;
+  }
+
+  .carouselItem {
+    width: 310px;
+    height: 400px;
+    margin-left: -155px;
+    margin-top: -200px;
+  }
+
+  .carouselNavLeft {
+    left: -6px;
+  }
+
+  .carouselNavRight {
+    right: -6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .viewToggleWrapper {
+    justify-content: center;
+  }
+}

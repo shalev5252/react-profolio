@@ -13,6 +13,7 @@ import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import ProjectDetails from "./components/Projects/ProjectDetails";
 import Contact from "./components/Contact/Contact";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -40,6 +41,7 @@ function App() {
                   <Experience />
                   <Projects />
                   <Contact />
+                  <ScrollToTop />
                 </>
               }
             />

@@ -12,12 +12,14 @@
   padding: var(--space-lg);
   cursor: pointer;
   transition: all var(--transition-base);
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .featuredCard:hover {
   border-color: var(--color-primary);
   box-shadow: 0 8px 40px rgba(99, 102, 241, 0.12);
-  transform: translateY(-4px);
+  transform: translateY(-4px) rotateX(2deg) rotateY(-2deg);
 }
 
 .featuredImageWrap {
@@ -86,12 +88,14 @@
   cursor: pointer;
   transition: all var(--transition-base);
   height: 100%;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .card:hover {
   border-color: var(--color-primary);
   box-shadow: 0 8px 30px rgba(99, 102, 241, 0.12);
-  transform: translateY(-6px);
+  transform: translateY(-6px) rotateX(2deg) rotateY(-2deg);
 }
 
 .cardImageWrap {

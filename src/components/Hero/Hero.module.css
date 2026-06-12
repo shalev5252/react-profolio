@@ -61,10 +61,24 @@
 }
 
 .name {
-  background: var(--gradient-primary);
+  background: linear-gradient(
+    90deg,
+    #6366f1 0%,
+    #06b6d4 25%,
+    #818cf8 50%,
+    #22d3ee 75%,
+    #6366f1 100%
+  );
+  background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: shimmerGradient 4s linear infinite;
+}
+
+@keyframes shimmerGradient {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
 }
 
 .taglineWrapper {

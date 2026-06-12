@@ -1,0 +1,11 @@
+Real-time multiplayer strategy game with a custom matchmaking system and
+live game-state synchronization.
+
+Implemented server-authoritative game logic to handle complex rules, edge
+cases, and instant interactions.
+
+Delivered a responsive, animated UI with robust WebSocket-based
+communication.
+
+Built an AI agent for single-player mode, enabling intelligent computer
+opponents using game-state analysis and adaptive decision-making.

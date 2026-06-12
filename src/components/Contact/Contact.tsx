@@ -61,6 +61,7 @@ const Contact = () => {
                 target={item.contactMethodLink !== "none" ? "_blank" : undefined}
                 rel="noreferrer"
                 className={styles.linkAnchor}
+                data-type={iconKeys[id]}
               >
                 <span className={styles.iconWrap}>
                   {icons[iconKeys[id]] || icons.email}

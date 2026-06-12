@@ -6,11 +6,12 @@ import useScrollReveal from "../../hooks/useScrollReveal";
 const About = () => {
   const sectionRef = useScrollReveal<HTMLElement>();
 
-  const stats = user.stats ? [
-    { value: user.stats.yearsExperience, label: "Years Experience" },
-    { value: user.stats.projectsBuilt, label: "Projects Built" },
-    { value: user.stats.technologies, label: "Technologies" },
-    { value: user.stats.languagesSpoken, label: "Languages" },
+  const userData = user as Record<string, any>;
+  const stats = userData.stats ? [
+    { value: userData.stats.yearsExperience, label: "Years Experience" },
+    { value: userData.stats.projectsBuilt, label: "Projects Built" },
+    { value: userData.stats.technologies, label: "Technologies" },
+    { value: userData.stats.languagesSpoken, label: "Languages" },
   ] : null;
 
   return (
